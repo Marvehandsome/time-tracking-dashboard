@@ -1,0 +1,315 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all .2s;
+    /* border: 2px solid white; */
+}
+
+body {
+    background-color: hsl(226, 43%, 10%)
+}
+
+.container {
+    /* width: 1140px; */
+    width: 100%;
+    min-height: 100%;
+    /* margin-left: 16.5%; */
+    /* margin-top: 8%; */
+    /* rem, em, %, vw, vh */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    /* grid-template-columns: 46px 46px 46px 46px; */
+    padding: 46px;
+    /* grid-gap: 20px 20px; */
+    grid-gap: 3% 3%;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.item1 {
+    grid-row: 1/4;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 6% 6% 5% 5%;
+    position: relative;
+    height: 64vh;
+}
+
+.days {
+    position: absolute;
+    width: 100%;
+    border-radius: 6% 6% 6% 6%;
+    background-color: hsl(246, 80%, 60%);
+    height: 41vh;
+    padding-left: 10%;
+    padding-top: 12%;
+}
+
+.image-class {
+    padding-top: 140%;
+    padding-left: 10%;
+    font-size: 18px;
+    color: hsl(234, 30%, 60%);
+}
+
+.daily {
+    cursor: pointer;
+}
+
+.daily:hover,
+:active {
+    color: white;
+}
+
+.weekly {
+    cursor: pointer;
+}
+
+.weekly:hover,
+:active {
+    color: white;
+}
+
+.monthly {
+    cursor: pointer;
+}
+
+.monthly:hover,
+:active {
+    color: white;
+}
+
+.days>img {
+    border: 3px solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.days>p {
+    padding-top: 25px;
+}
+
+.image-class>p {
+    padding-bottom: 15px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*----------------------- the six small boxes-------------------------------- */
+
+.item2 {
+    position: relative;
+    height: 30vh;
+    background-image: url(images/icon-work.svg);
+    background-color: hsl(15, 100%, 70%);
+    background-repeat: no-repeat;
+    background-position-x: 135px;
+    background-position-y: -10px;
+    background-size: 50px;
+    border-radius: 6% 6% 6% 6%;
+}
+
+.class2 {
+    position: absolute;
+    width: 100%;
+    border-radius: 6% 6% 6% 6%;
+    background-color: hsl(235, 46%, 20%);
+    top: 15%;
+    height: 26vh;
+    padding: 10% 10% 10% 10%;
+    cursor: pointer;
+}
+
+.item3 {
+    position: relative;
+    height: 30vh;
+    background-image: url(images/icon-play.svg);
+    background-color: hsl(195, 74%, 62%);
+    background-repeat: no-repeat;
+    background-position-x: 135px;
+    background-position-y: -10px;
+    background-size: 50px;
+    border-radius: 6% 6% 6% 6%;
+}
+
+.class3 {
+    position: absolute;
+    width: 100%;
+    border-radius: 6% 6% 6% 6%;
+    background-color: hsl(235, 46%, 20%);
+    top: 15%;
+    height: 26vh;
+    padding: 10% 10% 10% 10%;
+    cursor: pointer;
+}
+
+.item4 {
+    position: relative;
+    height: 30vh;
+    background-image: url(images/icon-study.svg);
+    background-color: hsl(348, 100%, 68%);
+    background-repeat: no-repeat;
+    background-position-x: 135px;
+    background-position-y: -10px;
+    background-size: 50px;
+    border-radius: 6% 6% 6% 6%;
+}
+
+.class4 {
+    position: absolute;
+    width: 100%;
+    border-radius: 6% 6% 6% 6%;
+    background-color: hsl(235, 46%, 20%);
+    top: 15%;
+    height: 26vh;
+    padding: 10% 10% 10% 10%;
+    cursor: pointer;
+}
+
+.item5 {
+    position: relative;
+    height: 30vh;
+    background-image: url(images/icon-exercise.svg);
+    background-color: hsl(145, 58%, 55%);
+    background-repeat: no-repeat;
+    background-position-x: 135px;
+    background-position-y: 0px;
+    background-size: 50px;
+    border-radius: 6% 6% 6% 6%;
+}
+
+.class5 {
+    position: absolute;
+    width: 100%;
+    border-radius: 6% 6% 6% 6%;
+    background-color: hsl(235, 46%, 20%);
+    top: 15%;
+    height: 26vh;
+    padding: 10% 10% 10% 10%;
+    cursor: pointer;
+}
+
+.item6 {
+    position: relative;
+    height: 30vh;
+    background-image: url(images/icon-social.svg);
+    background-color: hsl(264, 64%, 52%);
+    background-repeat: no-repeat;
+    background-position-x: 135px;
+    background-position-y: -10px;
+    background-size: 50px;
+    border-radius: 6% 6% 6% 6%;
+}
+
+.class6 {
+    position: absolute;
+    width: 100%;
+    border-radius: 6% 6% 6% 6%;
+    background-color: hsl(235, 46%, 20%);
+    top: 15%;
+    height: 26vh;
+    padding: 10% 10% 10% 10%;
+    cursor: pointer;
+}
+
+.item7 {
+    position: relative;
+    height: 30vh;
+    background-image: url(images/icon-self-care.svg);
+    background-color: hsl(43, 84%, 65%);
+    background-repeat: no-repeat;
+    background-position-x: 135px;
+    background-position-y: -10px;
+    background-size: 50px;
+    border-radius: 6% 6% 6% 6%;
+}
+
+.class7 {
+    position: absolute;
+    width: 100%;
+    border-radius: 6% 6% 6% 6%;
+    background-color: hsl(235, 46%, 20%);
+    top: 15%;
+    height: 26vh;
+    padding: 10% 10% 10% 10%;
+    cursor: pointer;
+}
+
+.dots {
+    position: inherit;
+    top: 8px;
+    right: 30px;
+    color: hsl(234, 30%, 60%);
+    cursor: pointer;
+}
+
+.dots:hover,
+.dots:active {
+    color: hsl(0, 0%, 100%);
+}
+
+.hours {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.class2:hover,
+.class2:active {
+    background-color: hsl(236, 39%, 27%);
+}
+
+.class3:hover,
+.class3:active {
+    background-color: hsl(236, 39%, 27%);
+}
+
+.class4:hover,
+.class4:active {
+    background-color: hsl(236, 39%, 27%);
+}
+
+.class5:hover,
+.class5:active {
+    background-color: hsl(236, 39%, 27%);
+}
+
+.class6:hover,
+.class6:active {
+    background-color: hsl(236, 39%, 27%);
+}
+
+.class7:hover,
+.class7:active {
+    background-color: hsl(236, 39%, 27%);
+}
+
+h1,
+.hours {
+    font-weight: 300;
+}
